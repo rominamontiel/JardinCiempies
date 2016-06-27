@@ -15,7 +15,17 @@ img.nena{
 	
 	margin-top:20px;
 }
+/* Carrusel */
+.contenedor-slider {
+	text-align: center;
+	width: 1090px;
+	margin: 50px auto;
+}
+.contenedor-slider .flexslider li img {
+	height: 400px;
+}
 
+/* Fin Carrusel */
 
 
 div.encabezado {
