@@ -27,6 +27,38 @@ img.nena{
 /* Fin Carrusel */
 
 
+.contenedor-columnas {
+	display: table;
+	margin: 100px auto;
+	width: 1090px;
+	border-collapse: separate;
+  	border-spacing: 10px;
+}
+.contenedor-columnas .fila {
+	display: table-row;
+}
+.contenedor-columnas .col {
+	display: table-cell;
+	width: 25%;
+    box-shadow: 1px 5px 2px rgba(0,0,0,.3);
+	background: rgba(255,255,255,.9);
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+.contenedor-columnas .col .imagen-video {
+	overflow: auto;
+}
+.contenedor-columnas .col iframe,
+.contenedor-columnas .col img {
+	width: 100%;
+	height: 200px;
+	vertical-align: top;
+}
+.contenedor-columnas .col .texto {
+	margin-top: 20px;
+}
+
+
 div.encabezado {
 	width:100%;
 	height:150px;
