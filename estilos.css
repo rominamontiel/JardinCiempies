@@ -12,8 +12,7 @@ body {
 
 img.nena{
 	width:100%;
-	
-	margin-top:20px;
+	/*margin-top:20px;*/
 }
 /* Carrusel */
 .contenedor-slider {
@@ -40,13 +39,15 @@ div.encabezado {
 }
 
 div.menu {
-	width:1090px;
-	height:30px;
+	width:100%;
+	height:35px;
 	background-color:#7ab332;
 	margin:auto;
 	text-align:center;
-	padding:5px;
-	border-radius:10px;
+	padding-top:5px;
+	padding-bottom:0px;
+	/*padding:5px;
+	/*border-radius:10px;*/
 	
 }
 div.menu a {
@@ -57,14 +58,14 @@ div.menu a {
 	font-size:22px;
 	color:#FFF;
 	padding:15px;
-	padding-top:5px;
-	padding-bottom:6px;
+	padding-top:0px;
+	padding-bottom:0px;
 	
 		
 }
 a.boton{
 	
-	border:1px solid #436716;	
+	/*border:1px solid #4e7f10;	*/
 	
 }
 
@@ -78,9 +79,10 @@ div.general {
 	width:1090px;
 	height:600px;
 	background-image:url("img/fondoblanco.png");
-	margin:auto;
+	margin-top:20px;
 	margin-top:20px;
 	border-radius:10px;
+	margin:auto;
 	
 }
 
@@ -481,3 +483,27 @@ div.galeria{
 img.galeria{
 	height:100%;
 }
+
+
+/* ----------------- Contenedor de Videos x4 ------------------- */
+
+
+
+div.video1{
+	
+	width:25%;
+	height:400px;
+	/*border: 1px solid #ccc;*/
+	background:#ccc;
+	float:left;
+			
+}
+
+iframe{
+	float:left;
+}
+
+p.tp2{
+	
+}
+
