@@ -11,6 +11,12 @@ $(window).load(function() {
 		
 $(document).ready(function(){
 	/*alert(">> NO SE ROMPIOO <<");*/
+	function esMailValido(emailAddress) {
+		var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+		return pattern.test(emailAddress);
+	};
+
+
 	$("#enviar").click(function() {
 		var nombre = $("#nombre").val();
 		var dni = $("#DNI").val();
@@ -18,7 +24,7 @@ $(document).ready(function(){
 		var mail=$("#mail").val();
 		var pass = $("#pass").val();
 		var rpass = $("#rpass").val();
-		var formatoMail = /[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+		//var formatoMail = /[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
 		/*
 		var formatoContraseña = /^[a-zA-Z0-9]*$/;
 		var formatoDni = /[0-9]/; */
@@ -50,7 +56,7 @@ $(document).ready(function(){
 			else
 			{$("#mensaje4").fadeOut();}	
 		
-		if(!formatoMail.test(mail))
+		if(!esMailValido(mail))
 			{ $("#mensaje4").fadeIn();
 			return false;}
 			else
