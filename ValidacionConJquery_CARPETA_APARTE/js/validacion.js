@@ -16,6 +16,10 @@ $(document).ready(function(){
 		return pattern.test(emailAddress);
 	};
 
+	function esPassValida(pass) {
+		return /^\w+$/.test(pass);
+	}
+
 
 	$("#enviar").click(function() {
 		var nombre = $("#nombre").val();
@@ -63,7 +67,7 @@ $(document).ready(function(){
 			{ $("#mensaje4").fadeOut();
 			 $("#correctoE").fadeIn(); }							
 		
-		if(pass == "" || pass.length <5 || pass.length >10)
+		if(esPassValida(pass) && (pass.length < 5 || pass.length > 10))
 			{ $("#mensaje5").fadeIn();
 			return false;}
 			else
